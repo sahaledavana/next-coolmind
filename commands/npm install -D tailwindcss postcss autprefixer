@@ -1,3 +1,4 @@
 npm install -D tailwindcss postcss autprefixer
  npx tailwindcss init -p
  
+  npm i @heroicons/react

@@ -4,7 +4,7 @@ import React, { useContext } from 'react'
 import { Store } from '../utils/Store'
 
 export default function Layout({title, children }) {
-  console.log(Store);
+  console.log("Inside cart");
   const { state } = useContext(Store) ;
   const { cart } = state;
 
