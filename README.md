@@ -39,4 +39,8 @@
    4. Add Reducer
    5. Create Store provider
    6. Handle add to cart button
-     
+
+11. Handling Changing Cart Items
+   1. Add Select box for quantity
+   2. Handle select box change
+         
