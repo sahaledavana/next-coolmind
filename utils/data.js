@@ -27,8 +27,8 @@ const data = {
             description : 'A popular shirt',
         },
         {
-            name : 'Free Shirt',
-            slug : 'Free-shirt',
+            name : 'Slim Shirt',
+            slug : 'Slim-shirt',
             category : 'Shirts',
             image    : '/images/shirt3.jpg',
             price : 90,
@@ -52,14 +52,14 @@ const data = {
         },
         {
             name : 'Glof Pants',
-            slug : 'Golf-pants',
+            slug : 'Golf-pants2',
             category : 'Pants',
             image    : '/images/pants2.jpg',
-            price : 40,
+            price : 120,
             brand : 'Addidas',
             rating : 4.5,
-            numReviews : 30,
-            countInStock : 30,
+            numReviews : 10,
+            countInStock : 20,
             description : 'A popular Pant',
         }
     ]

@@ -22,4 +22,12 @@
  6. Modified global.css
  7. Added data.js
 
- 
+
+9. Create Product Details
+  1. Create product page
+  2. create 3 coloumns
+  3. Show image in first coloumn
+  4. Show product info in second coloumn
+  5. Show add to cart action on third coloumn
+  6. Add styles
+  7. [slug].js is newly created
