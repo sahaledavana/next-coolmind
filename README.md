@@ -31,3 +31,12 @@
   5. Show add to cart action on third coloumn
   6. Add styles
   7. [slug].js is newly created
+
+10. Handle Add to cart
+   1. Define react context
+   2. Define card item state
+   3. Create add to cart action
+   4. Add Reducer
+   5. Create Store provider
+   6. Handle add to cart button
+     
