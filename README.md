@@ -43,4 +43,9 @@
 11. Handling Changing Cart Items
    1. Add Select box for quantity
    2. Handle select box change
-         
+
+12. Save Cart Items
+   1. Install js-cookie Package
+   2. Save and retreive cat items in cookies
+   
+            

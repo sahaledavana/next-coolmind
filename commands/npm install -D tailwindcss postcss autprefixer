@@ -1,4 +1,11 @@
 npm install -D tailwindcss postcss autprefixer
- npx tailwindcss init -p
+npx tailwindcss init -p
  
-  npm i @heroicons/react
+npm i @heroicons/react
+npm install js-cookie
+
+
+//])   const [cartItemsCount , setCartItemsCount] = useState(0);
+//   useEffect(() => {
+//     setCartItemsCount(cart.cartItems.reduce((a, c) => a + c.quantity , 0 ))
+//   },[;

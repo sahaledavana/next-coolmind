@@ -47,7 +47,7 @@ const data = {
             brand : 'Addidas',
             rating : 4.5,
             numReviews : 10,
-            countInStock : 20,
+            countInStock : 50,
             description : 'A popular Pant',
         },
         {
@@ -59,7 +59,7 @@ const data = {
             brand : 'Addidas',
             rating : 4.5,
             numReviews : 10,
-            countInStock : 20,
+            countInStock : 50,
             description : 'A popular Pant',
         }
     ]

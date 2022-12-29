@@ -19,6 +19,7 @@ export default function ProductScreen() {
     
     const addToCartHandler = () => {
         console.log('Adding onClick'); 
+        console.log(state);
        const existItem = state.cart.cartItems.find((x) => x.slug === product.slug);
        const quantity = existItem ? existItem.quantity + 1 : 1;
        dispatch({ type : 'CART_ADD_ITEM' , payload: { ...product , quantity : quantity }});         
