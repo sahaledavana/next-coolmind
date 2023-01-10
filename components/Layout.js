@@ -1,7 +1,10 @@
+import Image from 'next/image';
 import Head from 'next/head'
 import Link from 'next/link'
 import React, { useContext, useEffect, useState } from 'react'
 import { Store } from '../utils/Store'
+import Footer from '../components/Footer'
+
 
 export default function Layout({title, children }) {
   console.log("Inside cart");
@@ -20,12 +23,15 @@ export default function Layout({title, children }) {
     <link rel="icon" href="/favicon.ico" />
     </Head>
     
-    <div className="flex min-h-screen flex-col justify-between">
+     
+    <div className="flex min-h-screen flex-col justify-between  text-gray-300
+                     bg-fixed bg-center bg-cover custom-img">
         <header>
-            <nav className="flex h-12 items-center px-4 justify-between shadow-md">
+          <nav className="flex h-12 items-center px-4 justify-between shadow-md">
             <Link href = "/" className="text-lg font-bold">CoolMinds</Link>
+            <Link href = "/" className = "p-2  hover:bg-sky-700 ..."> All Plants </Link>
             <div>
-                    <Link href="/cart"  className="p-2">Cart
+                    <Link href="/cart"  className="p-2 ">Cart
                     {cartItemsCount > 0 && (
                      <span className="ml-1 rounded-full bg-red-600 px-2 py-1 text-xs font-bold text-white">
                         {cartItemsCount}
@@ -34,12 +40,20 @@ export default function Layout({title, children }) {
                     </Link>
                     <Link href="/login" className="p-2">Login</Link>
             </div>
-            </nav>
+           </nav>
         </header>
+        {/* <Image
+          src= '/images/4.jpg'
+          width={100}
+          height={90} 
+        />  */}
+
         <main className="container m-auto mt-4 px-4">{ children }</main>
-        <footer className="flex h-10 justify-center items-center shadow-inner">
+        {/* /*<footer className="flex h-10 justify-center items-center shadow-inner">
             <p> Copyright © 2022 CoolMinds </p>
-        </footer>
+      </footer>*/ }
+      <Footer />
+
     </div>
     </>
   )

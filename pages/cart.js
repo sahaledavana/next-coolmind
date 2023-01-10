@@ -14,7 +14,8 @@ function CartScreen() {
     cart: { cartItems },
 
    } = state;
-
+  
+   
   const removeItemHandler = (item) => {
     dispatch({ type : 'CART_REMOVE_ITEM', payload : {...item} })
   };
@@ -26,14 +27,14 @@ function CartScreen() {
   }
   return (
     <Layout title="Shopping Cart">
-    <h1 className= "mb-4 text-xl">Shopping Cart</h1>
+    <h1 className= "mb-4 text-xl ">Shopping Cart</h1>
     {
         cartItems.length === 0 ? (
             <div>
                 Cart is empty. <Link href ="/">Go Shopping</Link>
             </div>
         ):(
-            <div className="grid md:grid-cols-4 md:gap-5">
+            <div className="grid md:grid-cols-4 md:gap-5 bg-cover 	 ">
                <div className="overflow-x-auo md:col-span-3">
                 <table className="min-w-full">
                  <thead className="border-b">
@@ -91,7 +92,7 @@ function CartScreen() {
                 )}
                </div>        
                &nbsp;      
-               <button onClick={() => router.push('/shipping')}
+               <button onClick={() => router.push('login?redirect=/shipping')}
                className= "primary-button w-full " >Check Out</button>                 
                </div>               
               

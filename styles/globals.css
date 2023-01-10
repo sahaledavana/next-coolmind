@@ -116,7 +116,35 @@ a {
 
 }
 
+
+.Login{
+  @apply mb-5 block rounded-lg border border-green-100 shadow-md w-96 h-80;
+
+}
+
 .primary-button {
   @apply rounded bg-amber-300 py-2 px-4 shadow outline-none hover:bg-amber-400 
 
+}
+
+
+.Login-button {
+  @apply rounded bg-amber-200 shadow outline-none hover:bg-amber-400  
+
+}
+
+
+.custom-img {
+  background-image:  url('https://images.pexels.com/photos/1090972/pexels-photo-1090972.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+
+}
+
+
+@media (max-width: 425px) {
+  .banner_centered {
+      width: 100% !important;
+      max-width: 100% !important;
+      height: 100% !important;
+      max-height: 100% !important;
+  }
 }
