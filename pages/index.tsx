@@ -3,17 +3,21 @@ import ProductItem from '../components/ProductItem';
 import data from '../utils/data';
 import CenterBanner from '../components/CenterBanner';
 import BootstrapCarousel from "../carsol/Bootstrap";
+import Boot from "../carsol/Boot";
 
 
 export default function Home() {
   return (
-    <Layout title="Home Page"> 
+    
+    <Layout title="Home Page">
+       
     <CenterBanner />
+    
     <main>
-    <BootstrapCarousel />
+        <BootstrapCarousel />
     </main>
     
-    <div className="grid grid-cols-3 gap-4 md:grid-cols-4 lg:gid-cols-5">
+    <div className="container mt-4 px-4 grid grid-cols-3 gap-4 md:grid-cols-4 lg:gid-cols-5">
     {data.products.map((product) => (
       <ProductItem product = { product} key = {product.slug} ></ProductItem>
     ))}

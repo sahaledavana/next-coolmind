@@ -5,6 +5,7 @@ import React, { useContext } from 'react'
 import Layout from '../../components/Layout'
 import data from '../../utils/data'
 import Store from '../../utils/Store'
+import ProductImage from '../../styles/ProductImageStyle.module.css'
 
 export default function ProductScreen() {
     const { state , dispatch } = useContext(Store);
@@ -27,16 +28,19 @@ export default function ProductScreen() {
     };
 
   return (
+    <div className='bg-zinc-400	'>
     <Layout title={product.name}>       
         <Link href="/">Back to products</Link>        
         <div className ="grid grid-cols-3">
-        <Image
+        <div className = {ProductImage.ProductImageStyle}>
+        <Image 
           src={product.image}
           alt={product.name}
-          width={640}
-          height={640}
+          width={100}
+          height={100}
           layout = "responsive">
         </Image>
+        </div>
         <div className='px-4'>
             <ul>
                 <li>
@@ -61,6 +65,7 @@ export default function ProductScreen() {
         </div>
          
     </Layout>
+    </div>
   )
 }
 

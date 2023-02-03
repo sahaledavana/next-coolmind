@@ -4,29 +4,29 @@
         {
           "id": 1,
           "title": "Photography",
-          "body": "Bootstrap Carousel Example",
-          "imageUrl": "images/5.jpg",
+          "body": "There's magic in growing with plants.",
+          "imageUrl": "/images/Banner3.png",
           "docs": "https://getbootstrap.com/docs/4.0/components/carousel/"
         },
         {
           "id": 2,
           "title": "City Views",
           "body": "Bootstrap Carousel Example",
-          "imageUrl": "images/6.jpg",
+          "imageUrl": "/images/Banner4.png",
           "docs": "https://getbootstrap.com/docs/4.0/components/carousel/"
         },
         {
           "id": 3,
           "title": "Wild Life",
           "body": "Bootstrap Carousel Example",
-          "imageUrl": "images/8.jpg",
+          "imageUrl": "/images/Banner5.png",
           "docs": "https://getbootstrap.com/docs/4.0/components/carousel/"
         },
         {
           "id": 4,
           "title": "Foods and Culture",
           "body": "Bootstrap Carousel Example",
-          "imageUrl": "images/9.jpg",
+          "imageUrl": "/images/Banner6.png",
           "docs": "https://getbootstrap.com/docs/4.0/components/carousel/"
         }
       ]

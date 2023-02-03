@@ -4,9 +4,9 @@ import React from 'react'
 
 export default function ProductItem({product}) {
   return (
-    <div className="card">
+    <div className="card bg-black">
         <Link href = {`/product/${product.slug}`}
-          className="rounded shadow p-2 items-center ">
+          className="rounded shadow p-2 items-center  ">
         <img
         src={product.image}
         alt={product.name}

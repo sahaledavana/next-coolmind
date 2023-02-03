@@ -1,0 +1,8 @@
+.carsol{
+    width : 2000px;
+    height: 400px;
+    
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+}
