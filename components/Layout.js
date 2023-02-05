@@ -6,6 +6,7 @@ import { Store } from "../utils/Store";
 import Footer from "../components/Footer";
 import TopBar from "../components/TopBar";
 import BootstrapCarousel from "../carsol/Bootstrap";
+import FooterSt from "../styles/Footer.module.css"
 
 export default function Layout({ title, children }) {
   console.log("Inside cart");
@@ -16,9 +17,13 @@ export default function Layout({ title, children }) {
       </header>
       
       <div className="">
-        <main className=" m-auto ">{children}</main>
-        <Footer />
+        <main className=" m-auto ">{children}</main>        
       </div>
+      
+      <Footer />
+   
+      
+      
     </>
   );
 }

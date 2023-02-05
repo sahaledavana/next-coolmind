@@ -4,11 +4,12 @@ import data from '../utils/data';
 import CenterBanner from '../components/CenterBanner';
 import BootstrapCarousel from "../carsol/Bootstrap";
 import Boot from "../carsol/Boot";
+import Footer from '../components/Footer';
 
 
 export default function Home() {
   return (
-    
+    <>
     <Layout title="Home Page">
        
     <CenterBanner />
@@ -21,7 +22,13 @@ export default function Home() {
     {data.products.map((product) => (
       <ProductItem product = { product} key = {product.slug} ></ProductItem>
     ))}
+    
     </div>
+    
     </Layout>
+
+    
+    
+    </>
   )
 }
